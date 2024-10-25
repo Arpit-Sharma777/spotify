@@ -1,0 +1,314 @@
+/* styles.css */
+
+/* Body Styles */
+
+body {
+    margin: 0; /* Remove default margin */
+    background-color: rgb(25, 20, 20); /* Background color */
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+}
+
+/* Nav Bar Styles */
+nav {
+    background-color: rgb(25, 20, 20); /* Same as body */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+    padding: 10px 25px; /* Left and right padding */
+}
+
+nav img {
+    height: 60px; /* Logo height */
+    width: 60px; /* Logo width */
+}
+
+ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for horizontal layout */
+    gap: 15px; /* Space between list items */
+}
+
+ul li {
+    color: rgb(255, 255, 255); /* Text color */
+}
+
+ul li a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from li */
+}
+
+ul li a:hover {
+    color: rgb(30, 215, 96); /* Change color on hover */
+}
+
+/* Main Section Styles */
+#download {
+    background-color: rgb(25, 20, 20); /* Same as body */
+    text-align: center; /* Center-align text */
+    color: rgb(255, 255, 255); /* Text color */
+    padding: 10px 20px; /* Top and bottom 10px, left and right 20px */
+}
+
+/* Styles for h1 in main section */
+#download h1 {
+    font-weight: 700; /* Bold text */
+    line-height: 2; /* Space between h1 and h2 */
+}
+
+/* Styles for h2 in main section */
+#download h2 {
+    font-weight: 500; /* Semi-bold text */
+    line-height: 3; /* Space between h2 and buttons */
+}
+
+/* Styles for buttons in main section */
+#download button {
+    background-color: rgb(255, 255, 255); /* Button background color */
+    padding: 12px; /* Gap of 12px on all sides */
+    margin-bottom: 35px; /* Bottom margin */
+    font-weight: 500; /* Bold text */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    font-family: 'Poppins', sans-serif; /* Same font as body */
+    transition: transform 0.2s; /* Smooth scaling transition */
+}
+
+/* Hover effect for buttons */
+#download button:hover {
+    transform: scale(1.02); /* Scale button size on hover */
+}
+
+/* Responsive style for buttons */
+@media (max-width: 650px) {
+    #download button {
+        width: 100%; /* Full width for small devices */
+    }
+}
+
+/* Additional styles for other sections can be added below as needed */
+/* Styles for the difference-table section */
+#difference-table {
+    background-color: rgb(246, 246, 246); /* Section background color */
+    text-align: center; /* Center-align text */
+    padding: 20px 40px; /* Top and bottom 20px, left and right 40px */
+}
+
+/* Styles for h1 in difference-table section */
+#difference-table h1 {
+    font-weight: 700; /* Bold text */
+    padding: 0 50px; /* Top and bottom 0px, left and right 50px */
+}
+
+/* Styles for the table */
+#difference-table table {
+    max-width: 500px; /* Maximum width */
+    margin: 0 auto; /* Center align table */
+    padding: 20px 45px; /* Top and bottom 20px, left and right 45px */
+    border-collapse: collapse; /* Collapse borders */
+}
+
+/* Styles for table headings */
+#difference-table th {
+    font-weight: 300; /* Lighter weight for headings */
+}
+
+/* Styles for table data rows */
+#difference-table tr {
+    border-bottom: 1px solid rgb(170, 170, 170); /* Bottom border for separation */
+}
+
+/* Styles for icons in table */
+.fa-circle-check {
+    color: rgb(30, 215, 96); /* Check mark color */
+    font-size: 30px; /* Increased font size */
+}
+
+.fa-circle-xmark {
+    color: rgb(255, 0, 0); /* X mark color */
+    font-size: 30px; /* Increased font size */
+}
+
+/* Styles for button in difference-table section */
+#difference-table button {
+    background-color: rgb(25, 20, 20); /* Button background color */
+    padding: 12px 40px; /* Top and bottom 12px, left and right 40px */
+    font-weight: 500; /* Bold text */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    font-family: 'Poppins', sans-serif; /* Same font as body */
+    color: rgb(255, 255, 255); /* Button text color */
+}
+/* Styles for the premium section */
+#premium {
+    background-color: rgb(255, 255, 255); /* Section background color */
+    text-align: center; /* Center-align text */
+    padding: 20px; /* Padding of 20px on all sides */
+}
+
+/* Styles for h2 in premium section */
+#premium h2 {
+    margin: 0; /* Remove default margin */
+}
+
+/* Styles for the parent element of articles */
+#premium > div {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 10px; /* Space between price cards */
+    padding: 20px 100px; /* Padding of 20px top and bottom, 100px left and right */
+}
+
+/* Responsive styles for articles on small devices */
+@media (max-width: 650px) {
+    #premium > div {
+        grid-template-columns: 1fr; /* 1 column for small devices */
+        padding: 20px; /* 20px padding on all sides */
+    }
+}
+
+/* Styles for all articles (price cards) */
+.article {
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 0px 5px rgb(170, 170, 170); /* Box shadow */
+    padding: 20px; /* Padding of 20px on all sides */
+}
+
+/* Styles for card-header */
+.card-header {
+    border-bottom: 1px solid rgb(170, 170, 170); /* Bottom border for separation */
+}
+
+/* Styles for spans within card-header */
+.card-header span {
+    display: inline-block; /* Inline-block for layout */
+    font-size: 0.75rem; /* Font size */
+    background-color: rgb(13, 114, 234); /* Background color */
+    color: rgb(255, 255, 255); /* Text color */
+    padding: 5px; /* Padding of 5px on all sides */
+    font-weight: 500; /* Font weight */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 5px; /* Margin at the bottom */
+}
+
+/* Styles for h3 within card-header */
+.card-header h3 {
+    margin-bottom: 0; /* Remove bottom margin */
+}
+
+/* Styles for p tags within card-header */
+.card-header p {
+    margin-bottom: 0; /* Remove bottom margin */
+    font-weight: 300; /* Font weight */
+}
+
+/* Styles for list items within card body */
+.card-body li {
+    font-weight: 500; /* Font weight */
+}
+
+/* Styles for buttons within price cards */
+.article button {
+    background-color: rgb(25, 20, 20); /* Button background color */
+    padding: 12px 40px; /* Padding of 12px top and bottom, 40px left and right */
+    color: rgb(255, 255, 255); /* Text color */
+    font-family: 'Poppins', sans-serif; /* Same font as body */
+    font-weight: 500; /* Bold text */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: transform 0.2s; /* Smooth scaling transition */
+    width: 100%; /* Full width */
+}
+
+/* Hover effect for buttons */
+.article button:hover {
+    transform: scale(1.02); /* Scale button size on hover */
+}
+/* Styles for the students-offer section */
+#students-offer {
+    background-color: rgb(255, 255, 255); /* Section background color */
+    text-align: center; /* Center-align text */
+    padding: 20px; /* Padding of 20px on all sides */
+}
+
+/* Styles for buttons within the students-offer section */
+#students-offer button {
+    background-color: rgb(255, 255, 255); /* Button background color */
+    padding: 12px 40px; /* Padding of 12px top and bottom, 40px left and right */
+    font-family: 'Poppins', sans-serif; /* Same font as body */
+    color: rgb(25, 20, 20); /* Text color */
+    font-weight: 700; /* Bold text */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: transform 0.2s; /* Smooth scaling transition */
+}
+
+/* Hover effect for buttons */
+#students-offer button:hover {
+    transform: scale(1.02); /* Scale button size on hover */
+}
+
+/* Styles for the form */
+#students-offer form {
+    margin-top: 20px; /* Top margin to separate from the button */
+    border: 1px solid rgb(170, 170, 170); /* Border styling */
+    border-radius: 10px; /* Rounded corners */
+    padding: 25px; /* Padding of 25px on all sides */
+    text-align: left; /* Left-align content */
+}
+
+/* Styles for the email input */
+#email {
+    font-family: 'Poppins', sans-serif; /* Same font as body */
+    padding: 5px; /* Padding of 5px on all sides */
+    width: 100%; /* Full width */
+    margin-bottom: 5px; /* Margin at the bottom */
+}
+
+/* Styles for first-name and last-name inputs */
+#first-name, #last-name {
+    font-family: 'Poppins', sans-serif; /* Same font as body */
+    padding: 5px; /* Padding of 5px on all sides */
+    width: 46%; /* Width of 46% */
+}
+
+/* Responsive styles for first-name and last-name inputs */
+@media (max-width: 650px) {
+    #first-name, #last-name {
+        width: 100%; /* Full width for small devices */
+        margin-bottom: 5px; /* Margin at the bottom */
+    }
+}
+
+/* Styles for paragraph tags in the form */
+#students-offer form p {
+    margin-bottom: 0; /* Remove bottom margin */
+}
+
+/* Styles for country and college-university select tags */
+#country, #college-university {
+    font-family: 'Poppins', sans-serif; /* Same font as body */
+    padding: 5px; /* Padding of 5px on all sides */
+    width: 100%; /* Full width */
+    margin-bottom: 10px; /* Margin at the bottom */
+}
+
+/* Styles for contact-number input */
+#contact-number {
+    display: block; /* Occupy own block */
+    font-family: 'Poppins', sans-serif; /* Same font as body */
+    padding: 5px; /* Padding of 5px on all sides */
+    width: 100%; /* Full width */
+    margin-bottom: 10px; /* Margin at the bottom */
+}
+
+/* Styles for consent-checkbox */
+#consent-checkbox {
+    cursor: pointer; /* Pointer on hover */
+}
+
+/* Styles for the submit button in the form */
+#students-offer form button {
+    display: block; /* Occupy own block */
+    margin-top: 10px; /* Top margin to separate from content */
+}
